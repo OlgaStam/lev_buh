@@ -56,7 +56,10 @@ $myAssetBundle = AdminAsset::register($this);
             . Html::endForm();
     }
     NavBar::end();
-    ?>
+            ?>
+     
+
+
 </header>
 
 <main role="main" class="flex-shrink-0">
