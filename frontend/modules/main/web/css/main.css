@@ -76,6 +76,7 @@ header {
     border-radius: 30px;
     padding-top: 0;
     padding-bottom: 0;
+    box-shadow: -3px 3px 20px -10px black;
 }
 
 .header-logo__link:hover {
@@ -85,11 +86,15 @@ header {
 
 .header-navbar {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: flex-end;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
 }
 
+.header-navbar a {
+    text-decoration: none;
+    color: #468966;
+}
 
 .header-navbar__btn {
     position: relative;
@@ -163,22 +168,23 @@ header {
     border-bottom: solid 3px #468966;
 }
 
-header-navbar__contacts {
+.header-navbar__contacts {
     display: flex;
-    position: absolute;
-    top: 350%;
-    right: 20px;
-    margin: 0;
-    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 15px;
+    border-radius: 15px;
+
     list-style: none;
     text-align: right;
-    background-color: #46896697;
-    color: white;
+    /* background-color: #46896697;
+    color: white; */
     box-shadow: -3px 3px 20px -10px black;
-    flex-direction: column;
-    padding: 5px;
-    display: flex;
-    align-items: center;
+}
+
+.header-navbar__contacts:hover {
+    transform: scale(1.03) translateY(-0.5px);
+    box-shadow: 3px 5px 10px 0px black;
 }
 
 /* end header */
@@ -389,46 +395,32 @@ li a {
 
 @media (max-width: 767.8px) {
     .header-navbar {
+        flex-direction: row-reverse;
+    }
+
+    .header-navbar__list {
         display: none;
     }
 
-    .header-navbar a {
-        text-decoration: none;
-        color: white;
-    }
 
-    .header-navbar.active {
+
+    .header-navbar__list.active {
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
         display: flex;
         align-items: center;
+        justify-content: center;
+        padding: 15px;
         background-color: #468966c4;
         color: white;
         box-shadow: -3px 3px 20px -10px black;
-        flex-direction: column-reverse;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-    }
-
-    .header-navbar__list {
-        position: relative;
-        width: 50%;
-        background-color: #46896697;
-        box-shadow: -3px 3px 20px -10px black;
-        flex-direction: column;
-        padding: 5px;
-        margin-bottom: 20px;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
     }
 
     .nav-link {
-        transition: 0.8s ease;
-        border-bottom: solid 3px transparent;
-        font-size: 24px;
-        padding: 0;
         color: white !important;
     }
 
@@ -437,27 +429,10 @@ li a {
         border-bottom: solid 3px white;
     }
 
-    .header-navbar__contacts {
-        display: flex;
-        /* flex-direction: column; */
-        align-items: center;
-        gap: 15px;
-        padding: 10px 20px;
-
-        background-color: #46896697;
-        box-shadow: -3px 3px 20px -10px black;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-    }
 }
 
 @media (min-width: 768px) {
     .header-navbar__btn {
         display: none;
-    }
-
-    .header-navbar a {
-        color: #468966;
-        text-decoration: none;
     }
 }

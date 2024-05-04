@@ -34,12 +34,12 @@ $myAssetBundle = AppAsset::register($this);
                             <?= Html::img($myAssetBundle->baseUrl . '/images/icon-round.png') ?>
                         </a>
                     </div>
-                    <div class="header-navbar__btn">
-                        <span class="header-navbar__btn-row"></span>
-                        <span class="header-navbar__btn-row"></span>
-                        <span class="header-navbar__btn-row"></span>
-                    </div>
                     <div class="header-navbar">
+                        <div class="header-navbar__btn">
+                            <span class="header-navbar__btn-row"></span>
+                            <span class="header-navbar__btn-row"></span>
+                            <span class="header-navbar__btn-row"></span>
+                        </div>
                         <ul class='header-navbar__list'>
                             <li class='nav-item'>
                                 <?= Html::a(Yii::t('app', 'Головна'), ['/'], ['class' => 'nav-link main']) ?>
@@ -54,10 +54,11 @@ $myAssetBundle = AppAsset::register($this);
                                 <?= Html::a(Yii::t('app', 'Контакти'), ['/contact'], ['class' => 'nav-link contact']) ?>
                             </li>
                         </ul>
-                        <div class='header-navbar__contacts'>
-                            <a href='tel:+380986073304'>098-607-33-04</a>
+                        <a class='header-navbar__contacts' href='tel:+380986073304'>
+                            <span>Ми на зв'язку</span>
+                            <span>+38 (098) 607-33-04</span>
                             <small>Пн.-Пт. з 09:00 до 18:00</small>
-                        </div>
+                        </a>
                     </div>
                 </nav>
             </div>
