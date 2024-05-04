@@ -66,15 +66,12 @@ $myAssetBundle = AppAsset::register($this);
     </header>
 
     <main role='main'>
-        <div>
-
-            <!--     
+        <div class="container">
             <?= Breadcrumbs::widget([
                 'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
                 'class' => 'custom-breadcrumbs',
             ]) ?>
             <?= Alert::widget() ?>
-             -->
             <?= $content ?>
         </div>
     </main>
