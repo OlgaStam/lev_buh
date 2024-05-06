@@ -70,7 +70,7 @@ $myAssetBundle = AppAsset::register($this);
 
     <main role='main'>
 
-        <!-- <?= $content ?> -->
+        <?= $content ?>
     </main>
 
     <footer class='footer lev-bg cw'>
@@ -112,7 +112,7 @@ $myAssetBundle = AppAsset::register($this);
             <div class='footer-address'>
                 <h2 class="fh2">Адреса офісу</h2>
                 <i class="fa-solid fa-location-dot" cw"></i>
-                <?= Yii::t('app', 'Харківська обл., смт Пісочин (с.Надточії), вул.Дачна 39') ?>
+                <?= Html::a(Yii::t('app', 'Харківська обл., смт Пісочин (с.Надточії), вул.Дачна 39'), ['/contact'], ['class' => 'td cw']) ?>
             </div>
         </div>
     </footer>
