@@ -6,6 +6,7 @@
 use common\widgets\Alert;
 use frontend\modules\main\assets\AppAsset;
 use yii\bootstrap5\Html;
+use yii\bootstrap5\Breadcrumbs;
 
 $myAssetBundle = AppAsset::register($this);
 ?>
@@ -69,7 +70,10 @@ $myAssetBundle = AppAsset::register($this);
     </header>
 
     <main role='main'>
-
+        <?= Breadcrumbs::widget([
+            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+        ]) ?>
+        <?= Alert::widget() ?>
         <?= $content ?>
     </main>
 
