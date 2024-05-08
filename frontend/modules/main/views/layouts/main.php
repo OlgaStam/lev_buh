@@ -25,23 +25,23 @@ $myAssetBundle = AppAsset::register($this);
     <?php $this->head() ?>
 </head>
 
-<body class='d-flex flex-column h-100'>
+<body>
     <?php $this->beginBody() ?>
 
     <header class='header'>
         <div class='header-menu lev-font-color'>
-            <div class="container">
+            <div class='container'>
                 <nav class='header-menu__container'>
-                    <div class="header-logo">
+                    <div class='header-logo'>
                         <a class='header-logo__link' href='/'>
                             <?= Html::img($myAssetBundle->baseUrl . '/images/icon-round.png') ?>
                         </a>
                     </div>
-                    <div class="header-navbar">
-                        <div class="header-navbar__btn">
-                            <span class="header-navbar__btn-row"></span>
-                            <span class="header-navbar__btn-row"></span>
-                            <span class="header-navbar__btn-row"></span>
+                    <div class='header-navbar'>
+                        <div class='header-navbar__btn'>
+                            <span class='header-navbar__btn-row'></span>
+                            <span class='header-navbar__btn-row'></span>
+                            <span class='header-navbar__btn-row'></span>
                         </div>
                         <ul class='header-navbar__list'>
                             <li class='nav-item'>
@@ -69,7 +69,7 @@ $myAssetBundle = AppAsset::register($this);
 
     </header>
 
-    <main role='main'>
+    <main role='main' class='container'>
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
@@ -79,43 +79,43 @@ $myAssetBundle = AppAsset::register($this);
 
     <footer class='footer lev-bg cw'>
         <div class='container'>
-            <div class="footer-logo">
+            <div class='footer-logo'>
                 <a class='cw td' href=' /'>
                     <?= Html::img($myAssetBundle->baseUrl . '/images/icon-round.png') ?>
-                    <span>Бухгалтерська агенція "ЛЕВ"</span>
+                    <span>Бухгалтерська агенція 'ЛЕВ'</span>
                 </a>
-                <span class="f2">Наш супровід - Ваш спокій</span>
+                <span class='f2'>Наш супровід - Ваш спокій</span>
             </div>
 
-            <div class="footer-contacts">
-                <h2 class="fh2">Контакти</h2>
+            <div class='footer-contacts'>
+                <h2 class='fh2'>Контакти</h2>
                 <a class='phone cw td' href='tel:+380986073304'>
-                    <i class="fa-solid fa-phone-volume"></i>
+                    <i class='fa-solid fa-phone-volume'></i>
                     +38 (098) 607-33-04
                 </a>
-                <a class='mail cw td' href="mailto:lev.buh.agency@gmail.com">
-                    <i class="fa-solid fa-envelope"></i>
+                <a class='mail cw td' href='mailto:lev.buh.agency@gmail.com'>
+                    <i class='fa-solid fa-envelope'></i>
                     lev.buh.agency@gmail.com
                 </a>
                 <div class='social-icons-block'>
                     <a rel='noopener noreferrer' target='_blank' href='https://t.me/lev_buh' class='social-icons-link'>
-                        <i class="fa-brands fa-telegram cw"></i>
+                        <i class='fa-brands fa-telegram cw'></i>
                     </a>
                     <a rel='noopener noreferrer' target='_blank' href='viber://chat?number=+380986073304' class='social-icons-link'>
-                        <i class="fa-brands fa-viber cw"></i>
+                        <i class='fa-brands fa-viber cw'></i>
                     </a>
                     <a rel='noopener noreferrer' target='_blank' href='https://www.instagram.com/lev_buh_agency' class='social-icons-link'>
-                        <i class="fa-brands fa-instagram cw"></i>
+                        <i class='fa-brands fa-instagram cw'></i>
                     </a>
                     <a rel='noopener noreferrer' target='_blank' href='https://www.facebook.com/profile.php?id=61555635522199' class='social-icons-link'>
-                        <i class="fa-brands fa-facebook cw"></i>
+                        <i class='fa-brands fa-facebook cw'></i>
                     </a>
                 </div>
             </div>
 
             <div class='footer-address'>
-                <h2 class="fh2">Адреса офісу</h2>
-                <i class="fa-solid fa-location-dot" cw"></i>
+                <h2 class='fh2'>Адреса офісу</h2>
+                <i class='fa-solid fa-location-dot'></i>
                 <?= Html::a(Yii::t('app', 'Харківська обл., смт Пісочин (с.Надточії), вул.Дачна 39'), ['/contact'], ['class' => 'td cw']) ?>
             </div>
         </div>

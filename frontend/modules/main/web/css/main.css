@@ -78,6 +78,10 @@ li a {
     text-align: justify;
 }
 
+.fz37 {
+    font-size: 37px;
+}
+
 /* header */
 .header-menu {
     position: fixed;
@@ -414,14 +418,174 @@ i {
 /* end serve page */
 
 /* start price page */
-.main-price-item img {
-    max-height: 100%;
-    max-width: 100%;
+
+.price-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.price-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 525px;
+    padding: 15px;
+    background-color: #F2EFEB;
+    z-index: -1;
+    border-radius: 16px;
+}
+
+
+.price-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 16px;
+    gap: 8px;
+    box-shadow: 1px 20px 20px -24px black;
+    font-size: 14px;
+}
+
+.price-item span {
+    font-size: 16px;
+    text-align: center;
+    line-height: 19px;
+}
+
+.bg-drk {
+    background-color: #44544B;
+}
+
+.bg-mid {
+    background-color: #49745C;
+}
+
+.bg-lighter {
+    background-color: #50A475;
+}
+
+.bg-flower::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 156px;
+    background-image: url(../images/price/flowers-bottom.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.bg-price {
+    width: calc(100% - 72px);
+    height: 100%;
+    margin: 30px auto;
+    background-image: url(../images/price/bg-price.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    text-align: justify;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.bg-price::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+    border-radius: 16px;
+}
+
+.main-group {
+    flex-wrap: nowrap;
+}
+
+.second-group {
+    flex-wrap: wrap;
+}
+
+.third-group {
+    flex-wrap: nowrap;
+}
+
+.third-group .price-card {
+    padding-top: 50px;
+    width: 320px;
+    height: 635px;
+}
+
+.price-item-check {
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.price-item-title {
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.price-item-title p {
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+.bg-calc::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 135px;
+    height: 95px;
+    background-image: url(../images/price/calk-bottom-right.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    border-bottom-right-radius: 16px;
+}
+
+.bg-hand::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 85px;
+    background-image: url(../images/price/hand-left-top.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    border-top-left-radius: 16px;
+}
+
+.price-sum {
+    font-size: 26px;
+    padding: 0px;
+    margin-bottom: 0;
 }
 
 /* end price page */
 
 @media (max-width: 767.8px) {
+
+    /* header - media */
     .header-navbar {
         flex-direction: row-reverse;
     }
@@ -429,8 +593,6 @@ i {
     .header-navbar__list {
         display: none;
     }
-
-
 
     .header-navbar__list.active {
         position: absolute;
@@ -457,7 +619,9 @@ i {
         border-bottom: solid 3px white;
     }
 
+    /* end header - media */
 
+    /* footer - media */
     .footer .container {
         flex-direction: column;
         gap: 10px;
@@ -466,6 +630,72 @@ i {
     .fh2 {
         display: none;
     }
+
+    /* end footer - media */
+
+
+    /* price - media */
+    .price-section {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .price-item span {
+        line-height: 22px;
+        font-size: 22px;
+    }
+
+    .price-card {
+        width: 400px;
+        height: 100%;
+        gap: 10px;
+        padding: 40px;
+    }
+
+    .third-group .price-card {
+        width: 400px;
+        height: 100%;
+    }
+
+    .price-item {
+        padding: 15px;
+    }
+
+
+    .bg-flower {
+        padding-bottom: 140px;
+    }
+
+    .bg-flower:before {
+        height: 247px;
+    }
+
+    .price-item-title {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .price-item-title p {
+        line-height: 24px;
+        margin-bottom: 0;
+    }
+
+    .bg-calc {
+        padding-bottom: 80px;
+    }
+
+    .bg-calc::before {
+        width: 170px;
+        height: 120px;
+    }
+
+    .bg-hand::before {
+        width: 110px;
+        height: 89px;
+    }
+
+    /* end price - media */
 }
 
 @media (min-width: 768px) {
