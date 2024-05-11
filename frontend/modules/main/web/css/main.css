@@ -461,6 +461,7 @@ i {
     background-color: #F2EFEB;
     z-index: -1;
     border-radius: 16px;
+    box-shadow: 4px 4px 10px 3px #397054;
 }
 
 
