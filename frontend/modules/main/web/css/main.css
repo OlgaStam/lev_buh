@@ -85,6 +85,10 @@ li a {
     font-size: 37px;
 }
 
+.row {
+    justify-content: center;
+}
+
 /* header */
 .header-menu {
     position: fixed;
