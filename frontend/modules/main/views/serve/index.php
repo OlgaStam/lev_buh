@@ -11,7 +11,7 @@ $this->params['breadcrumbs'][] = 'Serve';
 
 $myAssetBundle = AppAsset::register($this);
 ?>
-<div class="site-about container">
+<div class="site-about container lev-font-color">
     <div class="serve-bg bg-two_notebooks">
         <div class='serve-row'>
             <div class='serve-text-block'>
@@ -64,7 +64,7 @@ $myAssetBundle = AppAsset::register($this);
     </div>
     <hr>
     <div class='serve-row'>
-        <span class="serve-text__title">Індивідуальні консультування:</span>
+        <span class="serve-text__title">Індивідуальне консультування</span>
         <p>
             Наші фахівці готові надати індивідуальні консультації,
             враховуючи унікальні потреби та особливості вашого бізнесу.
