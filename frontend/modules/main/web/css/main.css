@@ -27,11 +27,29 @@ ul {
 li a {
     display: block;
     text-align: center;
+}
+
+a {
     text-decoration: none;
+    transform: scale(1);
+    transition: transform 0.2s ease;
+}
+
+a:hover,
+a:visited {
+    color: #409468;
+}
+
+a:hover {
+    transform: scale(1.1);
 }
 
 .lev-bg {
     background-color: #468966;
+}
+
+.lev-color {
+    color: #468966;
 }
 
 .text-center {
@@ -85,6 +103,12 @@ li a {
     font-size: 37px;
 }
 
+i {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+
 
 
 /* header */
@@ -129,7 +153,6 @@ li a {
 }
 
 .header-navbar a {
-    text-decoration: none;
     color: #468966;
 }
 
@@ -237,12 +260,6 @@ li a {
     justify-items: center;
 }
 
-i {
-    margin-right: 10px;
-    margin-top: 5px;
-}
-
-
 .footer-logo {
     grid-area: fl;
     display: flex;
@@ -298,6 +315,11 @@ i {
     grid-area: fa;
     text-align: center;
     margin: 10px;
+}
+
+
+.footer a {
+    color: #fff;
 }
 
 /* end footer*/
@@ -434,7 +456,7 @@ i {
 .serve-text__title {
     font-size: 2.5rem;
     line-height: 50px;
-    padding-left: 50px;
+    text-align: center;
 }
 
 .serve-text__title~p {
@@ -627,6 +649,34 @@ i {
 
 /* end price page */
 
+/* contact page */
+.site-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 80px;
+    padding: 20px;
+    border-top: solid 1px #468966;
+}
+
+.contact-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+/* end contact page */
+
 @media (max-width: 767.8px) {
 
     /* header - media */
@@ -671,7 +721,7 @@ i {
         gap: 10px;
     }
 
-    .fh2 {
+    .footer-title {
         display: none;
     }
 
@@ -840,6 +890,21 @@ i {
     }
 
     /* end serve - media */
+
+    /* contact media */
+    .contact-row {
+        flex-direction: column;
+        gap: 20px;
+        border: none;
+        padding-top: 0;
+    }
+
+    .contact-column {
+        padding-top: 20px;
+        border-top: solid 1px #468966;
+    }
+
+    /* end contact media */
 }
 
 @media (min-width: 768px) {

@@ -88,7 +88,7 @@ $myAssetBundle = AppAsset::register($this);
             </div>
 
             <div class='footer-contacts'>
-                <h2 class='fh2'>Контакти</h2>
+                <h2 class='footer-title'>Контакти</h2>
                 <a class='phone cw td' href='tel:+380986073304'>
                     <i class='fa-solid fa-phone-volume'></i>
                     +38 (098) 607-33-04
@@ -114,9 +114,9 @@ $myAssetBundle = AppAsset::register($this);
             </div>
 
             <div class='footer-address'>
-                <h2 class='fh2'>Адреса офісу</h2>
+                <h2 class='footer-title'>Адреса офісу</h2>
                 <i class='fa-solid fa-location-dot'></i>
-                <?= Html::a(Yii::t('app', 'Харківська обл., смт Пісочин (с.Надточії), вул.Дачна 39'), ['/contact'], ['class' => 'td cw']) ?>
+                <?= Html::a(Yii::t('app', 'Харківська обл., смт Пісочин (с.Надточії), вул.Дачна 39'), ['/contact']) ?>
             </div>
         </div>
     </footer>
