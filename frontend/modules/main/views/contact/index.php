@@ -13,7 +13,7 @@ $this->title = 'Contact';
 $this->params['breadcrumbs'][] = $this->title;
 $myAssetBundle = AppAsset::register($this);
 ?>
-<div class='site-contact lev-font-color'>
+<div class='site-contact lev-font-color container'>
     <div class='contact-row'>
         <h3>Контакти</h3>
         <a class='phone lev-color td' href='tel:+380986073304'>

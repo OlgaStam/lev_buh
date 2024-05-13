@@ -108,7 +108,9 @@ i {
     margin-top: 5px;
 }
 
-
+.breadcrumb {
+    padding-left: 20px;
+}
 
 
 /* header */
@@ -148,7 +150,7 @@ i {
 .header-navbar {
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 10px;
     align-items: center;
 }
 
@@ -212,7 +214,8 @@ i {
     display: flex;
     flex-direction: row;
     justify-content: end;
-    gap: 15px;
+    gap: 20px;
+    padding: 15px;
 }
 
 .nav-link {
@@ -251,6 +254,7 @@ i {
 
 .footer {
     padding: 20px 0;
+    margin-top: 30px;
 }
 
 .footer .container {
@@ -333,7 +337,9 @@ i {
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
     background-position: right;
-    padding: 5% 0 0 10%;
+    padding: 5% 0 5% 10%;
+    display: flex;
+    flex-direction: column;
     font-size: 66px;
 }
 
@@ -343,10 +349,14 @@ i {
 }
 
 
+.title-main,
+.title-children {
+    padding: 6% 0 0 5%;
+}
+
 
 .title-main {
     font-size: 100%;
-    margin-bottom: 50px;
 }
 
 .title-children {
@@ -618,8 +628,8 @@ i {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 135px;
-    height: 95px;
+    width: 8.5em;
+    height: 6em;
     background-image: url(../images/price/calk-bottom-right.png);
     background-size: cover;
     background-position: center;
@@ -632,8 +642,8 @@ i {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100px;
-    height: 85px;
+    width: 5em;
+    height: 4.5em;
     background-image: url(../images/price/hand-left-top.png);
     background-size: cover;
     background-position: center;
@@ -671,13 +681,24 @@ i {
     flex-direction: column;
     width: 100%;
     align-items: stretch;
-    padding-bottom: 10px;
+    padding: 15px;
     overflow: hidden;
 }
 
+iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 16px;
+    box-shadow: 0px 0px 13px 0px #397054;
+}
+
+
 /* end contact page */
 
-@media (max-width: 767.8px) {
+
+@media(max-width: 767.8px) {
+
 
     /* header - media */
     .header-navbar {
@@ -691,9 +712,10 @@ i {
     .header-navbar__list.active {
         position: absolute;
         top: 100%;
-        left: 0;
+        left: 50%;
         right: 0;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 15px;
@@ -713,6 +735,10 @@ i {
         border-bottom: solid 3px white;
     }
 
+    .header-navbar__contacts {
+        font-size: 85%;
+    }
+
     /* end header - media */
 
     /* footer - media */
@@ -728,14 +754,20 @@ i {
     /* end footer - media */
     /* main - media */
     #main-fon {
-        min-height: 650px;
+        min-height: 7.5em;
         background-position: center;
         padding: 30px;
-        text-align: center;
+        text-align: left;
     }
 
     .title-main {
-        font-size: 70%;
+        font-size: 50%;
+        padding: 6% 0 0 5%;
+    }
+
+    .title-children {
+        font-size: 40%;
+        padding: 6% 0 0 5%;
     }
 
     .content-block {
@@ -761,29 +793,28 @@ i {
     }
 
     .price-card {
-        width: 400px;
+        width: 100%;
         height: 100%;
         gap: 10px;
-        padding: 40px;
+        padding-top: 50px;
     }
 
     .third-group .price-card {
-        width: 400px;
+        width: 100%;
         height: 100%;
     }
 
     .price-item {
-        padding: 15px;
+        padding: 10px;
     }
-
 
     .bg-flower {
         padding-bottom: 140px;
     }
 
-    .bg-flower:before {
+    /* .bg-flower:before {
         height: 247px;
-    }
+    } */
 
     .price-item-title {
         text-align: center;
@@ -800,13 +831,13 @@ i {
     }
 
     .bg-calc::before {
-        width: 170px;
-        height: 120px;
+        width: 9em;
+        height: 6em;
     }
 
     .bg-hand::before {
-        width: 110px;
-        height: 89px;
+        width: 4em;
+        height: 3.5em;
     }
 
     .tf {
@@ -911,5 +942,29 @@ i {
     .header-navbar__btn {
         display: none;
     }
+}
 
+@media (min-width: 900px) and (max-width: 1199px) {
+    .header-navbar__contacts {
+        font-size: 84%;
+    }
+}
+
+@media (max-width: 899.9px) {
+    .header-navbar__contacts {
+        font-size: 75%;
+    }
+}
+
+
+@media (max-width: 319.9px) {
+    .header-navbar {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+
+    .header-navbar__contacts :nth-child(1),
+    .header-navbar__contacts :nth-child(3) {
+        display: none;
+    }
 }
