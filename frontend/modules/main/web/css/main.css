@@ -113,9 +113,14 @@ i {
 }
 
 .modal {
-    top: 20%;
+    top: 10%;
 }
 
+.form-control:focus {
+    color: #468966;
+    border-color: #468966;
+    box-shadow: 0 0 0 0.25rem #46896640
+}
 
 /* header */
 .header-menu {
@@ -239,7 +244,7 @@ i {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 8px 15px;
+    padding: 8px;
     border-radius: 15px;
 
     list-style: none;
@@ -371,22 +376,18 @@ i {
 }
 
 .modal-button-consulting {
-
     transform: scale(1);
     transition: transform 0.3s ease;
-    /* transform-origin: center; */
+    padding: 20px;
+    color: #174b23;
+    font-size: 24px;
+    border-radius: 16px;
 }
 
 .modal-button-consulting:hover {
     transform: scale(1.1);
     background-color: white;
     color: #174b23;
-}
-
-.consultation-appointment button {
-    color: #174b23;
-    padding: 20px 10px;
-    font-size: 24px;
 }
 
 .consulting-submit-button {
@@ -774,6 +775,8 @@ iframe {
         background-position: center;
         padding: 30px;
         text-align: left;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
     }
 
     .title-main {
@@ -803,6 +806,11 @@ iframe {
         text-align: justify;
         text-indent: 25px;
         font-size: 16px;
+    }
+
+    .modal-button-consulting {
+        line-height: 25px;
+        padding: 15px;
     }
 
     /* end main - media */
@@ -839,10 +847,6 @@ iframe {
     .bg-flower {
         padding-bottom: 140px;
     }
-
-    /* .bg-flower:before {
-        height: 247px;
-    } */
 
     .price-item-title {
         text-align: center;
@@ -892,12 +896,12 @@ iframe {
     }
 
     .serve-text__title {
+        font-size: 2.1rem;
         text-align: center;
         padding: 0;
     }
 
     .serve-text__title~p {
-        text-align: justify;
         padding-top: 20px;
     }
 
@@ -926,7 +930,7 @@ iframe {
         z-index: 10;
         border-radius: 25px;
         color: white;
-        background-size: 180% auto;
+        background-size: 880px 880px;
         background-position: center;
         border: solid 5px #0A8000;
         box-shadow: -3px 3px 20px -10px #397054;
@@ -939,9 +943,9 @@ iframe {
         bottom: 0;
         left: 0;
         content: "";
-        background-color: #537a6e;
+        background-color: #7BA796;
         z-index: 20;
-        opacity: 0.6;
+        opacity: 0.9;
     }
 
     /* end serve - media */
@@ -970,18 +974,19 @@ iframe {
 
 @media (min-width: 900px) and (max-width: 1199px) {
     .header-navbar__contacts {
-        font-size: 84%;
+        font-size: 90%;
     }
 }
+
 
 @media (max-width: 899.9px) {
     .header-navbar__contacts {
-        font-size: 75%;
+        font-size: 90%;
     }
 }
 
 
-@media (max-width: 319.9px) {
+@media (max-width: 334.9px) {
     .header-navbar {
         flex-direction: column-reverse;
         align-items: flex-end;
