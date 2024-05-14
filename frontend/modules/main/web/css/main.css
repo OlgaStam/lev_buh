@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    margin-bottom: 140px;
+    margin-bottom: 120px;
 }
 
 ul {
@@ -110,6 +110,10 @@ i {
 
 .breadcrumb {
     padding-left: 20px;
+}
+
+.modal {
+    top: 20%;
 }
 
 
@@ -334,12 +338,10 @@ i {
     min-height: 700px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: right;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
-    background-position: right;
-    padding: 5% 0 5% 10%;
-    display: flex;
-    flex-direction: column;
+    padding: 4% 0 7% 10%;
     font-size: 66px;
 }
 
@@ -351,7 +353,7 @@ i {
 
 .title-main,
 .title-children {
-    padding: 6% 0 0 5%;
+    padding: 5% 0 0 5%;
 }
 
 
@@ -363,8 +365,22 @@ i {
     font-size: 37px;
 }
 
+/* TO DO */
 .consultation-appointment {
     margin: 6% 0 0 5%;
+}
+
+.modal-button-consulting {
+
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    /* transform-origin: center; */
+}
+
+.modal-button-consulting:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: #174b23;
 }
 
 .consultation-appointment button {
@@ -511,7 +527,7 @@ i {
     background-color: #F2EFEB;
     z-index: -1;
     border-radius: 16px;
-    box-shadow: 4px 4px 10px 3px #397054;
+    box-shadow: 4px 4px 10px 0px #637a6d;
 }
 
 
@@ -567,7 +583,7 @@ i {
     background-image: url(../images/price/bg-price.png);
     background-size: cover;
     background-repeat: no-repeat;
-    font-size: 15px;
+    font-size: 17px;
     text-align: justify;
     padding: 20px;
     display: flex;
@@ -754,7 +770,7 @@ iframe {
     /* end footer - media */
     /* main - media */
     #main-fon {
-        min-height: 7.5em;
+        min-height: 7em;
         background-position: center;
         padding: 30px;
         text-align: left;
@@ -772,10 +788,21 @@ iframe {
 
     .content-block {
         flex-direction: column;
+        margin: 0 1px 20px 1px;
     }
 
     .content-block__item {
         width: 100%;
+    }
+
+    .content-block__title {
+        font-size: 2em;
+    }
+
+    .tf {
+        text-align: justify;
+        text-indent: 25px;
+        font-size: 16px;
     }
 
     /* end main - media */
@@ -796,10 +823,11 @@ iframe {
         width: 100%;
         height: 100%;
         gap: 10px;
-        padding-top: 50px;
     }
 
+    .second-group .price-card,
     .third-group .price-card {
+        padding-top: 50px;
         width: 100%;
         height: 100%;
     }
@@ -838,10 +866,6 @@ iframe {
     .bg-hand::before {
         width: 4em;
         height: 3.5em;
-    }
-
-    .tf {
-        font-size: 20px;
     }
 
     .f2 {

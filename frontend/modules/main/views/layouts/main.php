@@ -83,7 +83,7 @@ $myAssetBundle = AppAsset::register($this);
             <div class='footer-logo'>
                 <a class='cw td' href=' /'>
                     <?= Html::img($myAssetBundle->baseUrl . '/images/icon-round.png') ?>
-                    <span>Бухгалтерська агенція 'ЛЕВ'</span>
+                    <span>Бухгалтерська агенція "ЛЕВ"</span>
                 </a>
                 <span class='f2'>Наш супровід - Ваш спокій</span>
             </div>
