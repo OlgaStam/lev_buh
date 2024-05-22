@@ -76,6 +76,13 @@ $myAssetBundle = AppAsset::register($this);
         ]) ?>
         <?= Alert::widget() ?>
         <?= $content ?>
+        <div class="up-button__wrapper">
+            <a href="" class="up-button">
+                <svg width="29" height="29" viewBox="0 0 50 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="up-button__path" d="M4.5 24.5L25 4L45.5 24.5" stroke="#545683" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </a>
+        </div>
     </main>
 
     <footer class='footer lev-bg cw'>
