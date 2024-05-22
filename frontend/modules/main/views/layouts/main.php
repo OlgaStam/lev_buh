@@ -78,7 +78,7 @@ $myAssetBundle = AppAsset::register($this);
         <?= $content ?>
         <div class="up-button__wrapper">
             <a href="" class="up-button">
-                <svg width="29" height="29" viewBox="0 0 50 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="29" height="29" viewBox="0 0 50 29" fill="none">
                     <path class="up-button__path" d="M4.5 24.5L25 4L45.5 24.5" stroke="#545683" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
             </a>
@@ -92,7 +92,7 @@ $myAssetBundle = AppAsset::register($this);
                     <?= Html::img($myAssetBundle->baseUrl . '/images/icon-round.png') ?>
                     <span>Бухгалтерська агенція "ЛЕВ"</span>
                 </a>
-                <span class='f2'>Наш супровід - Ваш спокій</span>
+                <span>Наш супровід - Ваш спокій</span>
             </div>
 
             <div class='footer-contacts'>

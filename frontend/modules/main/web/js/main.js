@@ -16,6 +16,7 @@ jQuery(function ($) {
   $('.close-modal').on('click', function () {
     $('#myModal').modal('hide');
   });
+
   $('.header-navbar__btn').on('click', function () {
     $(this).toggleClass('active');
     $('.header-navbar__list').toggleClass('active');

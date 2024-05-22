@@ -11,262 +11,240 @@ $this->title = $this->title = Yii::t('app', 'Ціни');
 $this->params['breadcrumbs'][] = 'Price';
 ?>
 <div class='container'>
+    <section class='padd'>
+        <a class="price-card bg-calc" href='#group_1-2'>
+            Для ФО-П на єдиному податку 1-2 група
+            <span>1</span>
+        </a>
+        <a class="price-card bg-calc" href='#group_3'>
+            Для ФО-П на єдиному податку 3 група
+            <span>2</span>
+        </a>
+        <a class="price-card bg-calc" href='#without_tax'>
+            Для юридичних осіб на єдиному податку без ПДВ
+            <span>3</span>
+        </a>
+        <a class="price-card bg-calc" href='#with_tax'>
+            Для юридичних осіб на загальній системі оподпткування з ПДВ
+            <span>4</span>
+        </a>
+        <a class="price-card bg-calc" href='#other_services'>
+            Інші послуги
+            <span>5</span>
+        </a>
 
-    <div class='price-section main-group'>
-        <div class='price-card bg-flower'>
-            <span>Послуги</span>
-            <h2>ПРАЙС</h2>
-            <div class='price-item bg-drk cw'>
-                <span>Відкриття ФОП</span>
-                <span>1500 - 2000 ₴</span>
-            </div>
-            <div class='price-item bg-mid cw'>
-                <span>Підключення ПРРО</span>
-                <span>800 - 2000 ₴</span>
-            </div>
-            <div class='price-item bg-lighter cw'>
-                <span>Здача річної звітності ФОП на єдиному податку 1 група</span>
-                <span>500 ₴</span>
+    </section>
+    <section class='price-section'>
+        <section class='price-category bg-hand' id='group_1-2'>
+            <span>1</span>
+            <h2 class='price-category__name'>Для ФО-П на єдиному податку 1-2 група</h2>
+            <article class='price-item'>
+                <h3 class='price-item__name'>Пакет мінімальний</h3>
+                <ul class='price-item__check'>
+                    <li><i class='fa-solid fa-check'></i>щомісячний контроль сплати податків</li>
+                    <li><i class='fa-solid fa-check'></i>заповнення книги обліку доходів</li>
+                    <li><i class='fa-solid fa-check'></i>подача щорічної звітності</li>
+                    <li><i class='fa-solid fa-check'></i>консультування</li>
+                </ul>
+                <p class='cost'>від 500 грн</p>
+            </article>
+            <article class='price-item'>
+                <h3 class='price-item__name'>Пакет стандарт</h3>
+                <ul class='price-item__check'>
+                    <li><i class='fa-solid fa-check'></i>щомісячний контроль сплати податків</li>
+                    <li><i class='fa-solid fa-check'></i>заповнення книги обліку доходів</li>
+                    <li><i class='fa-solid fa-check'></i>подача щорічної звітності</li>
+                    <li><i class='fa-solid fa-check'></i>підготовка та щоквартальна здача 4ДФ</li>
+                    <li><i class='fa-solid fa-check'></i>консультування</li>
+                </ul>
+                <p class='cost'>900-1200 грн</p>
+            </article>
+            <article class='price-item'>
+                <h3 class='price-item__name'>Пакет максимальний_1</h3>
+                <ul class='price-item__check'>
+                    <li><i class='fa-solid fa-check'></i>щомісячний контроль сплати податків</li>
+                    <li><i class='fa-solid fa-check'></i>заповнення книги обліку доходів</li>
+                    <li><i class='fa-solid fa-check'></i>подача щорічної звітності</li>
+                    <li><i class='fa-solid fa-check'></i>підготовка та щоквартальна здача 4ДФ</li>
+                    <li><i class='fa-solid fa-check'></i>1 найманий працівник (первинні документи, податки та звітність)</li>
+                    <li><i class='fa-solid fa-check'></i>консультування</li>
+                </ul>
+                <p class='cost'>1800-2200 грн</p>
+            </article>
+            <article class='price-item'>
+                <h3 class='price-item__name'>Пакет максимальний_2</h3>
+                <ul class='price-item__check'>
+                    <li><i class='fa-solid fa-check'></i>щомісячний контроль сплати податків</li>
+                    <li><i class='fa-solid fa-check'></i>заповнення книги обліку доходів</li>
+                    <li><i class='fa-solid fa-check'></i>подача щорічної звітності</li>
+                    <li><i class='fa-solid fa-check'></i>підготовка та щоквартальна здача 4ДФ</li>
+                    <li><i class='fa-solid fa-check'></i>2-4 найманий працівник (первинні документи, податки та звітність)</li>
+                    <li><i class='fa-solid fa-check'></i>консультування</li>
+                </ul>
+                <p class='cost'>2000-2600 грн</p>
+            </article>
+            <article class='price-item'>
+                <h3 class='price-item__name'>Пакет максимальний_3</h3>
+                <ul class='price-item__check'>
+                    <li><i class='fa-solid fa-check'></i>щомісячний контроль сплати податків</li>
+                    <li><i class='fa-solid fa-check'></i>заповнення книги обліку доходів</li>
+                    <li><i class='fa-solid fa-check'></i>подача щорічної звітності</li>
+                    <li><i class='fa-solid fa-check'></i>підготовка та щоквартальна здача 4ДФ</li>
+                    <li><i class='fa-solid fa-check'></i>5-8 найманий працівник (первинні документи, податки та звітність)</li>
+                    <li><i class='fa-solid fa-check'></i>консультування</li>
+                </ul>
+                <p class='cost'>2400-3400 грн</p>
+            </article>
+        </section>
 
+        <section class='price-category bg-hand' id='group_3'>
+            <span>2</span>
+            <h2 class='price-category__name'>Для ФО-П на єдиному податку 3 група</h2>
+            <article class='price-item'>
+                <h3 class='price-item__name'>Пакет стандарт</h3>
+                <ul class='price-item__check'>
+                    <li><i class='fa-solid fa-check'></i>щомісячний контроль сплати податків</li>
+                    <li><i class='fa-solid fa-check'></i>заповнення книги обліку доходів</li>
+                    <li><i class='fa-solid fa-check'></i>підготовка та щоквартальна подача звітності</li>
+                    <li><i class='fa-solid fa-check'></i>консультування</li>
+                </ul>
+                <p class='cost'>1100-1500 грн</p>
+            </article>
+            <article class='price-item'>
+                <h3 class='price-item__name'>Пакет максимальний_1</h3>
+                <ul class='price-item__check'>
+                    <li><i class='fa-solid fa-check'></i>щомісячний контроль сплати податків</li>
+                    <li><i class='fa-solid fa-check'></i>заповнення книги обліку доходів</li>
+                    <li><i class='fa-solid fa-check'></i>подача щоквартальної звітності</li>
+                    <li><i class='fa-solid fa-check'></i>підготовка та щоквартальна здача 4ДФ</li>
+                    <li><i class='fa-solid fa-check'></i>1 найманий працівник (первинні документи, податки та звітність)</li>
+                    <li><i class='fa-solid fa-check'></i>консультування</li>
+                </ul>
+                <p class='cost'>1800-2200 грн</p>
+            </article>
+            <article class='price-item'>
+                <h3 class='price-item__name'>Пакет максимальний_2</h3>
+                <ul class='price-item__check'>
+                    <li><i class='fa-solid fa-check'></i>щомісячний контроль сплати податків</li>
+                    <li><i class='fa-solid fa-check'></i>заповнення книги обліку доходів</li>
+                    <li><i class='fa-solid fa-check'></i>підготовка та щоквартальна подача звітності</li>
+                    <li><i class='fa-solid fa-check'></i>2-4 найманий працівник (первинні документи, податки та звітність)</li>
+                    <li><i class='fa-solid fa-check'></i>консультування</li>
+                </ul>
+                <p class='cost'>2300-2700 грн</p>
+            </article>
+            <article class='price-item'>
+                <h3 class='price-item__name'>Пакет максимальний_3</h3>
+                <ul class='price-item__check'>
+                    <li><i class='fa-solid fa-check'></i>щомісячний контроль сплати податків</li>
+                    <li><i class='fa-solid fa-check'></i>заповнення книги обліку доходів</li>
+                    <li><i class='fa-solid fa-check'></i>підготовка та щоквартальна здача звітності</li>
+                    <li><i class='fa-solid fa-check'></i>від 5 найманий працівник (первинні документи, податки та звітність)</li>
+                    <li><i class='fa-solid fa-check'></i>консультування</li>
+                </ul>
+                <p class='cost'>від 2700 грн</p>
+            </article>
+        </section>
+
+        <section class='price-category bg-hand' id='without_tax'>
+            <span>3</span>
+            <h2 class='price-category__name'>Для юридичних осіб на єдиному податку без ПДВ</h2>
+            <article class='price-item'>
+                <h3 class='price-item__name'>Пакет мінімальний</h3>
+                <ul class='price-item__check'>
+                    <li><i class='fa-solid fa-check'></i>до 20 операцій на міцсяць</li>
+                    <li><i class='fa-solid fa-check'></i> до 2 співробітників
+                    </li>
+                </ul>
+                <p class='cost'>від 3500 грн</p>
+            </article>
+            <article class='price-item'>
+                <h3 class='price-item__name'>Пакет максимальний</h3>
+                <ul class='price-item__check'>
+                    <li><i class='fa-solid fa-check'></i>більше 20 операцій на міцсяць</li>
+                    <li><i class='fa-solid fa-check'></i>більше 2 співробітників</li>
+                    <i>Можливе додаткове подання звітності:</i>
+                    <li>• по військовому обліку</li>
+                    <li>• по податку (оренді) на землю та нерухомість</li>
+                    <li>• по рентній платі</li>
+                    <li>• по екологічному податку</li>
+                    <li>• в статистику</li>
+                </ul>
+                <p class='cost'>ціна розраховується індивідуально</p>
+            </article>
+        </section>
+        <section class='price-category bg-hand' id='with_tax'>
+            <span>4</span>
+            <h2 class='price-category__name'>Для юридичних осіб на загальній системі оподаткування з ПДВ</h2>
+            <article class='price-item'>
+                <h3 class='price-item__name'>Пакет мінімальний</h3>
+                <ul class='price-item__check'>
+                    <li><i class='fa-solid fa-check'></i>до 10 операцій на міцсяць</li>
+                    <li><i class='fa-solid fa-check'></i>до 2 співробітників</li>
+                </ul>
+                <p class='cost'>від 5000 грн</p>
+            </article>
+            <article class='price-item'>
+                <h3 class='price-item__name'>Пакет стандарт</h3>
+                <ul class='price-item__check'>
+                    <li><i class='fa-solid fa-check'></i>до 30 операцій на міцсяць</li>
+                    <li><i class='fa-solid fa-check'></i>до 5 співробітників</li>
+                </ul>
+                <p class='cost'>від 10000 грн</p>
+            </article>
+            <article class='price-item'>
+                <h3 class='price-item__name'>Пакет максимальний</h3>
+                <ul class='price-item__check'>
+                    <li><i class='fa-solid fa-check'></i>більше 30 операцій на міцсяць</li>
+                    <li><i class='fa-solid fa-check'></i>більше 5 співробітників</li>
+                    <i>Можливе додаткове подання звітності:</i>
+                    <li>• по військовому обліку</li>
+                    <li>• по податку (оренді) на землю та нерухомість</li>
+                    <li>• по рентній платі</li>
+                    <li>• по екологічному податку</li>
+                    <li>• в статистику</li>
+                </ul>
+                <p class='cost'>ціна розраховується індивідуально</p>
+            </article>
+        </section>
+        <section class='price-category bg-hand' id='other_services'>
+            <span>5</span>
+            <h2 class='price-category__name'>Інші послуги</h2>
+            <div class='others'>
+                <article class='price-item'>
+                    <h3 class='price-item__name'>Відкриття ФОП</h3>
+                    <p class='cost'>1500-2000 грн</p>
+                </article>
+                <article class='price-item'>
+                    <h3 class='price-item__name'>Підключення ПРРО</h3>
+                    <p class='cost'>800-2000 грн</p>
+                </article>
+                <article class='price-item'>
+                    <h3 class=' price-item__name'>Здача річної звітності ФОП на єдиному податку 1 група</h3>
+                    <p class='cost'>500 грн</p>
+                </article>
+                <article class='price-item'>
+                    <h3 class='price-item__name'>Здача річної звітності ФОП на єдиному податку 1 група с заповненням книги</h3>
+                    <p class='cost'>1000 грн</p>
+                </article>
+                <article class='price-item'>
+                    <h3 class='price-item__name'>Здача річної звітності ФОП на єдиному податку 2 група</h3>
+                    <p class='cost'>700 грн</p>
+                </article>
+                <article class='price-item'>
+                    <h3 class='price-item__name'>Здача річної звітності ФОП на єдиному податку 2 група с заповненням книги</h3>
+                    <p class='cost'>1500 грн</p>
+                </article>
+                <article class='price-item'>
+                    <h3 class='price-item__name'>Здача квартальної звітності ФОП на єдиному податку 3 група</h3>
+                    <p class='cost'>700 грн</p>
+                </article>
+                <article class='price-item'>
+                    <h3 class='price-item__name'>Кадровий облік</h3>
+                    <p class='cost'>800 грн за 1 працівник + 400 грн за кожного наступного</p>
+                </article>
             </div>
-        </div>
-        <div class='price-card bg-flower'>
-            <span>Послуги</span>
-            <h2>ПРАЙС</h2>
-            <div class='price-item bg-drk cw'>
-                <span>Здача річної звітності ФОП на єдиному податку 1 група з заповненням книги</span>
-                <span>1500 ₴</span>
-            </div>
-            <div class='price-item bg-mid cw'>
-                <span>Здача річної звітності ФОП на єдиному податку 2 група</span>
-                <span>700 ₴</span>
-            </div>
-            <div class='price-item bg-lighter cw'>
-                <span>Здача річної звітності ФОП на єдиному податку 2 група з заповненням книги</span>
-                <span>1500 ₴</span>
-            </div>
-        </div>
-        <div class='price-card bg-flower'>
-            <span>Послуги</span>
-            <h2>ПРАЙС</h2>
-            <div class='price-item bg-drk cw'><span>Здача квартальної звітності ФОП на єдиному податку 3 група</span>
-                <span>700 ₴</span>
-            </div>
-            <div class='price-item bg-mid cw'>
-                <span>Бухгалтерський облік для юридичних осіб.</span>
-                <span>Мінімум: один співробітник, об'єднана звітність, 10 податкових в місяц, торгівля</span>
-                <span>від 3500 ₴</span>
-            </div>
-            <div class='price-item bg-lighter cw'>
-                <span>Кадровий облік</span>
-                <span>800 ₴ за 1 працівник + 400 ₴ за кожного наступного</span>
-            </div>
-        </div>
-    </div>
-    <div class='price-card bg-price cw'>
-        <span>Бухгалтерська агенція 'ЛЕВ' допоможе Вам вірно заповнити та подати звітність по Вашому ФОП на єдиному податку:</span>
-        <span> - ФОП 1 група річна - 700 ₴</span>
-        <span> - ФОП 2 група річна - 1000 ₴</span>
-        <span> - ФОП 3 група квартал - 900 ₴</span>
-    </div>
-    <hr>
-    <div class='price-section second-group'>
-        <div class='price-card bg-calc'>
-            <div class='price-item-title bg-hand'>
-                <span class='fz37'>ПРАЙС</span>
-                <p>ОБСЛУГОВУВАННЯ ФОП НА ЄДИНОМУ ПОДАТКУ
-                    <br>
-                    <b>1 ТА 2 ГРУПИ</b>
-                </p>
-            </div>
-            <div class='price-item bg-drk cw'>
-                <span>ПАКЕТ МІНІМАЛЬНИЙ</span>
-            </div>
-            <ul class='price-item-check'>
-                <li><i class='fa-regular fa-circle-check'></i>щомісячний контроль сплати податків</li>
-                <li><i class='fa-regular fa-circle-check'></i>заповнення книги обліку доходів</li>
-                <li><i class='fa-regular fa-circle-check'></i>подача щорічної звітності</li>
-            </ul>
-            <div class='price-item bg-drk cw '>
-                <p class='price-sum'>300 - 500 ₴</p>
-            </div>
-        </div>
-        <div class='price-card bg-calc'>
-            <div class='price-item-title bg-hand'>
-                <span class='fz37'>ПРАЙС</span>
-                <p>ОБСЛУГОВУВАННЯ ФОП НА ЄДИНОМУ ПОДАТКУ
-                    <br>
-                    <b>1 ТА 2 ГРУПИ</b>
-                </p>
-            </div>
-            <div class='price-item bg-drk cw'>
-                <span>ПАКЕТ СТАНДАРТ</span>
-            </div>
-            <ul class='price-item-check'>
-                <li><i class='fa-regular fa-circle-check'></i>щомісячний контроль сплати податків</li>
-                <li><i class='fa-regular fa-circle-check'></i>заповнення книги обліку доходів</li>
-                <li><i class='fa-regular fa-circle-check'></i>подача щорічної звітності</li>
-                <li><i class='fa-regular fa-circle-check'></i>підготовка та щоквартальна здача 4ДФ</li>
-            </ul>
-            <div class='price-item bg-drk cw'>
-                <p class='price-sum'>900 - 1200 ₴</p>
-            </div>
-        </div>
-        <div class='price-card bg-calc'>
-            <div class='price-item-title bg-hand'>
-                <span class='fz37'>ПРАЙС</span>
-                <p>ОБСЛУГОВУВАННЯ ФОП НА ЄДИНОМУ ПОДАТКУ
-                    <br>
-                    <b>1 ТА 2 ГРУПИ</b>
-                </p>
-            </div>
-            <div class='price-item bg-drk cw'>
-                <span>ПАКЕТ МАКСИМАЛЬНИЙ 1</span>
-            </div>
-            <ul class='price-item-check'>
-                <li><i class='fa-regular fa-circle-check'></i>щомісячний контроль сплати податків</li>
-                <li><i class='fa-regular fa-circle-check'></i>заповнення книги обліку доходів</li>
-                <li><i class='fa-regular fa-circle-check'></i>подача щорічної звітності</li>
-                <li><i class='fa-regular fa-circle-check'></i>підготовка та щоквартальна здача 4ДФ</li>
-                <li><i class='fa-regular fa-circle-check'></i>1 найманий працівник (первинні документи, податки та звітність)</li>
-            </ul>
-            <div class='price-item bg-drk cw fz37'>
-                <p class='price-sum'>1800 - 2200 ₴</p>
-            </div>
-        </div>
-        <div class='price-card bg-calc'>
-            <div class='price-item-title bg-hand'>
-                <span class='fz37'>ПРАЙС</span>
-                <p>ОБСЛУГОВУВАННЯ ФОП НА ЄДИНОМУ ПОДАТКУ
-                    <br>
-                    <b>1 ТА 2 ГРУПИ</b>
-                </p>
-            </div>
-            <div class='price-item bg-drk cw'>
-                <span>ПАКЕТ МАКСИМАЛЬНИЙ 2</span>
-            </div>
-            <ul class='price-item-check'>
-                <li><i class='fa-regular fa-circle-check'></i>щомісячний контроль сплати податків</li>
-                <li><i class='fa-regular fa-circle-check'></i>заповнення книги обліку доходів</li>
-                <li><i class='fa-regular fa-circle-check'></i>подача щорічної звітності</li>
-                <li><i class='fa-regular fa-circle-check'></i>підготовка та щоквартальна здача 4ДФ</li>
-                <li><i class='fa-regular fa-circle-check'></i>2-4 найманий працівник (первинні документи, податки та звітність)</li>
-            </ul>
-            <div class='price-item bg-drk cw fz37'>
-                <p class='price-sum'>2000 - 2600 ₴</p>
-            </div>
-        </div>
-        <div class='price-card bg-calc'>
-            <div class='price-item-title bg-hand'>
-                <span class='fz37'>ПРАЙС</span>
-                <p>ОБСЛУГОВУВАННЯ ФОП НА ЄДИНОМУ ПОДАТКУ
-                    <br>
-                    <b>1 ТА 2 ГРУПИ</b>
-                </p>
-            </div>
-            <div class='price-item bg-drk cw'>
-                <span>ПАКЕТ МАКСИМАЛЬНИЙ 3</span>
-            </div>
-            <ul class='price-item-check'>
-                <li><i class='fa-regular fa-circle-check'></i>щомісячний контроль сплати податків</li>
-                <li><i class='fa-regular fa-circle-check'></i>заповнення книги обліку доходів</li>
-                <li><i class='fa-regular fa-circle-check'></i>подача щорічної звітності</li>
-                <li><i class='fa-regular fa-circle-check'></i>підготовка та щоквартальна здача 4ДФ</li>
-                <li><i class='fa-regular fa-circle-check'></i>5-8 найманий працівник (первинні документи, податки та звітність)</li>
-            </ul>
-            <div class='price-item bg-drk cw fz37'>
-                <p class='price-sum'>2400 - 3400 ₴</p>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <div class='price-section third-group'>
-        <div class='price-card bg-calc'>
-            <div class='price-item-title bg-hand'>
-                <span class='fz37'>ПРАЙС</span>
-                <p>ОБСЛУГОВУВАННЯ ФОП НА ЄДИНОМУ ПОДАТКУ
-                    <br>
-                    <b>3 ГРУПИ</b>
-                </p>
-            </div>
-            <div class='price-item bg-drk cw'>
-                <span>ПАКЕТ СТАНДАРТ</span>
-            </div>
-            <ul class='price-item-check'>
-                <li><i class='fa-regular fa-circle-check'></i>щомісячний контроль сплати податків</li>
-                <li><i class='fa-regular fa-circle-check'></i>заповнення книги обліку доходів</li>
-                <li><i class='fa-regular fa-circle-check'></i>подача щоквартальної декларації</li>
-                <li><i class='fa-regular fa-circle-check'></i>підготовка та щоквартальна здача 4ДФ</li>
-            </ul>
-            <div class='price-item bg-drk cw '>
-                <p class='price-sum'>1100 - 1500 ₴</p>
-            </div>
-        </div>
-        <div class='price-card bg-calc'>
-            <div class='price-item-title bg-hand'>
-                <span class='fz37'>ПРАЙС</span>
-                <p>ОБСЛУГОВУВАННЯ ФОП НА ЄДИНОМУ ПОДАТКУ
-                    <br>
-                    <b>3 ГРУПИ</b>
-                </p>
-            </div>
-            <div class='price-item bg-drk cw'>
-                <span>ПАКЕТ МАКСИМАЛЬНИЙ 1</span>
-            </div>
-            <ul class='price-item-check'>
-                <li><i class='fa-regular fa-circle-check'></i>щомісячний контроль сплати податків</li>
-                <li><i class='fa-regular fa-circle-check'></i>заповнення книги обліку доходів</li>
-                <li><i class='fa-regular fa-circle-check'></i>подача щоквартальної декларації</li>
-                <li><i class='fa-regular fa-circle-check'></i>підготовка та щоквартальна здача 4ДФ</li>
-                <li><i class='fa-regular fa-circle-check'></i>1 найманий працівник (первинні документи, податки та звітність)</li>
-            </ul>
-            <div class='price-item bg-drk cw '>
-                <p class='price-sum'>1800 - 2200 ₴</p>
-            </div>
-        </div>
-        <div class='price-card bg-calc'>
-            <div class='price-item-title bg-hand'>
-                <span class='fz37'>ПРАЙС</span>
-                <p>ОБСЛУГОВУВАННЯ ФОП НА ЄДИНОМУ ПОДАТКУ
-                    <br>
-                    <b>3 ГРУПИ</b>
-                </p>
-            </div>
-            <div class='price-item bg-drk cw'>
-                <span>ПАКЕТ МАКСИМАЛЬНИЙ 2</span>
-            </div>
-            <ul class='price-item-check'>
-                <li><i class='fa-regular fa-circle-check'></i>щомісячний контроль сплати податків</li>
-                <li><i class='fa-regular fa-circle-check'></i>заповнення книги обліку доходів</li>
-                <li><i class='fa-regular fa-circle-check'></i>подача щоквартальної звітності</li>
-                <li><i class='fa-regular fa-circle-check'></i>підготовка та щоквартальна здача 4ДФ</li>
-                <li><i class='fa-regular fa-circle-check'></i>2-4 найманий працівник (первинні документи, податки та звітність)</li>
-            </ul>
-            <div class='price-item bg-drk cw fz37'>
-                <p class='price-sum'>2300 - 3700 ₴</p>
-            </div>
-        </div>
-        <div class='price-card bg-calc'>
-            <div class='price-item-title bg-hand'>
-                <span class='fz37'>ПРАЙС</span>
-                <p>ОБСЛУГОВУВАННЯ ФОП НА ЄДИНОМУ ПОДАТКУ
-                    <br>
-                    <b>3 ГРУПИ</b>
-                </p>
-            </div>
-            <div class='price-item bg-drk cw'>
-                <span>ПАКЕТ МАКСИМАЛЬНИЙ 3</span>
-            </div>
-            <ul class='price-item-check'>
-                <li><i class='fa-regular fa-circle-check'></i>щомісячний контроль сплати податків</li>
-                <li><i class='fa-regular fa-circle-check'></i>заповнення книги обліку доходів</li>
-                <li><i class='fa-regular fa-circle-check'></i>подача щоквартальної звітності</li>
-                <li><i class='fa-regular fa-circle-check'></i>підготовка та щоквартальна здача 4ДФ</li>
-                <li><i class='fa-regular fa-circle-check'></i>5-8 найманий працівник (первинні документи, податки та звітність)</li>
-            </ul>
-            <div class='price-item bg-drk cw fz37'>
-                <p class='price-sum'>2300 - 3700 ₴</p>
-            </div>
-        </div>
-    </div>
+        </section>
+    </section>
+
 </div>
