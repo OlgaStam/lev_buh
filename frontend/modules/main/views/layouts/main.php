@@ -7,7 +7,9 @@ use common\widgets\Alert;
 use frontend\modules\main\assets\AppAsset;
 use yii\bootstrap5\Html;
 use yii\bootstrap5\Breadcrumbs;
+use yii\helpers\Url;
 
+$this->registerLinkTag(['rel' => 'canonical', 'href' => Url::canonical()]);
 $myAssetBundle = AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>

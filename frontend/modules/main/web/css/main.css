@@ -113,6 +113,11 @@ i {
     top: 10%;
 }
 
+.modal-open {
+    overflow: scroll !important;
+    padding-right: 0 !important;
+}
+
 .form-control:focus {
     color: #468966;
     border-color: #468966;
@@ -492,8 +497,7 @@ i {
 
 .content-block__item-text {
     font-size: 20px;
-    text-align: justify;
-    /* color: white; */
+    text-align: center;
 }
 
 /* end main page */
