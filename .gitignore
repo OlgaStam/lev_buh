@@ -43,3 +43,4 @@ phpunit.phar
 /backend/web/robots.txt
 
 docker/.env
+/frontend/modules/main/web/node_modules
