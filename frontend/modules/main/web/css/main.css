@@ -488,7 +488,7 @@ i {
 
   border-bottom-right-radius: 100px;
   border-bottom-left-radius: 100px;
-  background-image: url(../images/main/first.png);
+  background-image: url(../images/main/first.webp);
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
@@ -588,7 +588,7 @@ i {
   overflow: hidden;
 
   border-radius: 100px;
-  background-image: url(../images/main/second.png);
+  background-image: url(../images/main/second.webp);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -983,7 +983,7 @@ a.price-card span {
 
   opacity: 0.5;
   border-bottom-right-radius: 16px;
-  background-image: url(../images/price/calk-bottom-right.png);
+  background-image: url(../images/price/calk-bottom-right.webp);
   background-position: center;
   background-size: cover;
 }
@@ -1000,7 +1000,7 @@ a.price-card span {
   content: "";
 
   border-top-left-radius: 16px;
-  background-image: url(../images/price/hand-left-top.png);
+  background-image: url(../images/price/hand-left-top.webp);
   background-position: center;
   background-size: cover;
 }
@@ -1289,13 +1289,13 @@ iframe {
     display: none;
   }
   .bg-two_notebooks {
-    background-image: url(../images/serve/two-notebooks-round.png);
+    background-image: url(../images/serve/two-notebooks-round.webp);
   }
   .bg-codecs {
-    background-image: url(../images/serve/codecs-round.png);
+    background-image: url(../images/serve/codecs-round.webp);
   }
   .bg-notebook {
-    background-image: url(../images/serve/notebook-round.png);
+    background-image: url(../images/serve/notebook-round.webp);
   }
   .serve-bg {
     position: relative;
