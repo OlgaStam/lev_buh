@@ -13,7 +13,7 @@ final class AdminAsset extends AssetBundle
 {
     public $sourcePath = '@frontend/modules/admin/web';
     public $css = [
-        'css/main.css',
+        'css/style.css',
     ];
     public $js = [
         //'js/main.js',

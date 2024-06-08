@@ -13,7 +13,7 @@ final class AppAsset extends AssetBundle
 {
     public $sourcePath = '@frontend/modules/main/web';
     public $css = [
-        'css/main.css',
+        'css/style.css',
     ];
     public $js = [
         'js/main.js',
