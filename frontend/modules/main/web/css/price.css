@@ -188,7 +188,6 @@ a.price-card span {
 /* end price page */
 @media(max-width: 767.8px) {
 
-
     /* price - media */
     .padd {
         flex-direction: column;
@@ -211,7 +210,6 @@ a.price-card span {
         flex-direction: column;
         gap: 10px;
     }
-
 
     .price-category__name,
     .price-item__name {
@@ -256,7 +254,6 @@ a.price-card span {
         margin: 10px 0;
     }
 
-
     /* end price - media */
 }
 
@@ -271,7 +268,6 @@ a.price-card span {
     .cost {
         align-items: center;
     }
-
 
     .price-item__check {
         padding-left: 0;

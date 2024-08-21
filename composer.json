@@ -16,9 +16,7 @@
     "require": {
         "php": "^7.4",
         "yiisoft/yii2": "~2.0.45",
-        "yiisoft/yii2-bootstrap5": "~2.0.2",
         "bower-asset/jquery": "@stable",
-        "bower-asset/bootstrap": "@stable",
         "bower-asset/jquery-ui": "@stable",
         "bower-asset/jquery.inputmask": "@stable",
         "bower-asset/punycode": "@stable",
@@ -33,7 +31,11 @@
         "ext-curl": "*",
         "ext-intl": "*",
         "monolog/monolog": "*",
-        "yiisoft/yii2-symfonymailer": "~2.0.0"
+        "yiisoft/yii2-symfonymailer": "~2.0.0",
+        "kartik-v/yii2-editors": "dev-master",
+        "kdn/yii2-domain-validator": "dev-master",
+        "kartik-v/yii2-widgets": "^3.4",
+        "yiisoft/yii2-bootstrap": "~2.0.0"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",

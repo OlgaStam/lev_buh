@@ -13,15 +13,15 @@ final class AdminAsset extends AssetBundle
 {
     public $sourcePath = '@frontend/modules/admin/web';
     public $css = [
-        'css/style.css',
+        'css/main.css',
     ];
     public $js = [
         //'js/main.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
-        'yii\bootstrap5\BootstrapAsset',
-        'yii\bootstrap5\BootstrapPluginAsset',
+        'yii\bootstrap\BootstrapAsset',
+        'yii\bootstrap\BootstrapPluginAsset',
     ];
 
     public $publishOptions = ['forceCopy' => true];

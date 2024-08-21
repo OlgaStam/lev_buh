@@ -5,8 +5,8 @@
 /** @var \frontend\models\ContactForm $model */
 
 use frontend\modules\main\assets\AppAsset;
-use yii\bootstrap5\Html;
-use yii\bootstrap5\ActiveForm;
+use yii\bootstrap\Html;
+use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
 
 $this->title = 'Contact';
@@ -31,10 +31,10 @@ $myAssetBundle = AppAsset::register($this);
             <a rel='noopener noreferrer' target='_blank' href='viber://chat?number=+380986073304' class='social-icons-link'>
                 <i class='fa-brands fa-viber lev-color'></i>
             </a>
-            <a rel='noopener noreferrer' target='_blank' href='https://www.instagram.com/lev_buh_agency' class='social-icons-link'>
+            <a rel='noopener noreferrer' target='_blank' href='https://www.instagram.com/lev.buh.agency' class='social-icons-link'>
                 <i class='fa-brands fa-instagram lev-color'></i>
             </a>
-            <a rel='noopener noreferrer' target='_blank' href='https://www.facebook.com/profile.php?id=61555635522199' class='social-icons-link'>
+            <a rel='noopener noreferrer' target='_blank' href='https://www.facebook.com/profile.php?id=61557095614231' class='social-icons-link'>
                 <i class='fa-brands fa-facebook lev-color'></i>
             </a>
         </div>

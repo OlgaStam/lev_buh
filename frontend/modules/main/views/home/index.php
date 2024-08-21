@@ -1,6 +1,6 @@
 <?php
 
-use yii\bootstrap5\Button;
+use yii\bootstrap\Button;
 use frontend\modules\main\forms\ContactForm;
 
 /** @var yii\web\View $this */

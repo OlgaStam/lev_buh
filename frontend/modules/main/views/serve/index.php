@@ -23,7 +23,7 @@ $myAssetBundle = AppAsset::register($this);
                 </ul>
             </div>
             <div class='serve-round-image'>
-                <?= Html::img($myAssetBundle->baseUrl . '/images/serve/two-notebooks-round.png') ?>
+                <?= Html::img($myAssetBundle->baseUrl . '/images/serve/two-notebooks-round.webp') ?>
             </div>
         </div>
     </div>
@@ -31,7 +31,7 @@ $myAssetBundle = AppAsset::register($this);
     <div class="serve-bg bg-codecs">
         <div class='serve-row'>
             <div class='serve-round-image'>
-                <?= Html::img($myAssetBundle->baseUrl . '/images/serve/codecs-round.png') ?>
+                <?= Html::img($myAssetBundle->baseUrl . '/images/serve/codecs-round.webp') ?>
             </div>
             <div class='serve-text-block'>
                 <p class="serve-text__title">Податковий супровід:</p>
@@ -58,7 +58,7 @@ $myAssetBundle = AppAsset::register($this);
                 </ul>
             </div>
             <div class='serve-round-image'>
-                <?= Html::img($myAssetBundle->baseUrl . '/images/serve/notebook-round.png') ?>
+                <?= Html::img($myAssetBundle->baseUrl . '/images/serve/notebook-round.webp') ?>
             </div>
         </div>
     </div>

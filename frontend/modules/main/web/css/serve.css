@@ -64,7 +64,6 @@
         display: none;
     }
 
-
     .bg-two_notebooks {
         background-image: url(../images/serve/two-notebooks-round.webp);
     }
@@ -76,7 +75,6 @@
     .bg-notebook {
         background-image: url(../images/serve/notebook-round.webp);
     }
-
 
     .serve-bg {
         position: relative;

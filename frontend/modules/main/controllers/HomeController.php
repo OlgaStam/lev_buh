@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace frontend\modules\main\controllers;
 
+use common\models\User;
 use common\modules\notifications\services\ConsultingService;
 use frontend\modules\main\forms\ContactForm;
 use yii\web\Controller;

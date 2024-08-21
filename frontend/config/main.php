@@ -12,6 +12,7 @@ $params = array_merge(
 
 return [
     'id' => 'app-frontend',
+    'language' => 'uk',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
@@ -56,8 +57,9 @@ return [
                 'about' => 'main/about/index',
                 'serve' => 'main/serve/index',
                 'price' => 'main/price/index',
-                'testimonials' => 'main/testimonial/index',
+                'testimonial' => 'main/testimonial/index',
                 'consulting' => 'admin/consulting/index',
+                'article' => 'admin/seo/index',
                 //'logout' => 'admin/auth/logout',
                 //'admin/login' => 'admin/login/index',
 //                '<controller:\w+>/<id:\d+>' => '<controller>/view',

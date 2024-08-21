@@ -15,14 +15,17 @@ DUMP_DB_PASS=$(shell cat ${DOCKER_FOLDER_PATH}/.env | grep DUMP_DB_PASS | awk -F
 POSTGRES_USER=$(shell cat ${DOCKER_FOLDER_PATH}/.env | grep POSTGRES_USER | awk -F= '{print $$2}')
 
 
-init: prepare-env build up restore-db composer-install project-init change-mode
+init: prepare-env prepare-credentials build up restore-db composer-install project-init change-mode
 
 prepare-db: dump-db restore-db
 
 set-default-config: backup-main-config copy-default-config	
 
 prepare-env:
-	cp ${DOCKER_FOLDER_PATH}/.env.example ${DOCKER_FOLDER_PATH}/.env 
+	cp ${DOCKER_FOLDER_PATH}/.env.example ${DOCKER_FOLDER_PATH}/.env
+
+prepare-credentials:
+	cp common/config/credentials.example.php common/config/credentials.php
 
 build:
 	docker-compose $(COMPOSE) $(ENV) build

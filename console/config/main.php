@@ -17,16 +17,12 @@ return [
         '@npm'   => '@vendor/npm-asset',
     ],
     'controllerMap' => [
+        //'migrate' => require(__DIR__ . '/controllerMap/migrate/common.php'),
     ],
-    'components' => [
-        'log' => [
-            'targets' => [
-                [
-                    'class' => \yii\log\FileTarget::class,
-                    'levels' => ['error', 'warning'],
-                ],
-            ],
-        ],
+    'components' => require(__DIR__ . '/components/common.php'),
+    'container' => [
+        'definitions' => require(__DIR__ . '/container/definitions/common.php'),
     ],
+    'modules' => require(__DIR__ . '/modules/common.php'),
     'params' => $params,
 ];

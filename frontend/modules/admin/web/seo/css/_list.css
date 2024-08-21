@@ -1,0 +1,21 @@
+.list {
+    flex: 25% 1 1
+}
+
+.list__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.list__row {
+    cursor: pointer;
+}
+
+.list__row-selected {
+    background-color: var(--selected-color) !important;
+}
+
+.list__row:active {
+    background-color: var(--active-color) !important;
+}

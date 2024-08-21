@@ -1,0 +1,41 @@
+.editor {
+    flex: 75% 1 1;
+    display: none;
+}
+
+.editor__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 0 !important;
+}
+
+.editor__btn-save {
+    margin-right: 7px !important;
+}
+
+.editor__image-block {
+    display: flex;
+    max-height: border-box;
+}
+
+.editor__preview {
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 1s;
+    z-index: 1000;
+}
+
+.editor__preview:hover {
+    transform: scale(4);
+}
+
+.editor__image-info-block {
+    padding-left: 14px;
+    flex-grow: 1;
+}
+
+.editor__content-editor-block {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}

@@ -6,10 +6,10 @@
 
 use common\widgets\Alert;
 use frontend\modules\admin\assets\AdminAsset;
-use yii\bootstrap5\Breadcrumbs;
-use yii\bootstrap5\Html;
-use yii\bootstrap5\Nav;
-use yii\bootstrap5\NavBar;
+use yii\widgets\Breadcrumbs;
+use yii\bootstrap\Html;
+use yii\bootstrap\Nav;
+use yii\bootstrap\NavBar;
 
 $myAssetBundle = AdminAsset::register($this);
 ?>
@@ -56,10 +56,7 @@ $myAssetBundle = AdminAsset::register($this);
             . Html::endForm();
     }
     NavBar::end();
-            ?>
-     
-
-
+    ?>
 </header>
 
 <main role="main" class="flex-shrink-0">
@@ -74,8 +71,7 @@ $myAssetBundle = AdminAsset::register($this);
 
 <footer class="footer mt-auto py-3 text-muted">
     <div class="container">
-        <p class="float-start">&copy; <?= Html::encode(Yii::$app->name) ?> <?= date('Y') ?></p>
-        <p class="float-end"><?= Yii::powered() ?></p>
+        <p class="float-start">&copy; Lev_buh.com <?= date('Y') ?></p>
     </div>
 </footer>
 

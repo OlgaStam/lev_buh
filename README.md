@@ -4,6 +4,13 @@
 переключится на ветку develop
 
 git clone https://github.com/asvskoda/lev_buh
+
+.env.example сменить 
+1. user на своего пользователя linux
+
+2. выполнить из консоли id -u username
+and change uid
+
 make init
 ```
 
