@@ -66,12 +66,10 @@
     margin: 10px;
 }
 
-.footer a {
-    color: #fff;
-}
 
 /* end footer*/
 @media(max-width: 767.8px) {
+
     /* footer - media */
     .footer .container {
         flex-direction: column;

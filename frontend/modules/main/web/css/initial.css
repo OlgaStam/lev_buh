@@ -1,6 +1,44 @@
-main>.container {
-    position: relative;
-    padding: 0 15px 20px;
+html {
+    font-size: 16px;
+}
+
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
 }
 
 @font-face {
@@ -31,17 +69,15 @@ li a {
 }
 
 a {
+    display: block;
     text-decoration: none;
     transform: scale(1);
     transition: transform 0.2s ease;
 }
 
-a:hover,
-a:visited {
-    color: #409468;
-}
-
 a:hover {
+    text-decoration: none;
+    color: #409468;
     transform: scale(1.1);
 }
 

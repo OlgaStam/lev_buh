@@ -13,17 +13,19 @@ $this->registerLinkTag(['rel' => 'canonical', 'href' => Url::canonical()]);
 $myAssetBundle = AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
-    <!DOCTYPE html>
-    <html lang='<?= Yii::$app->language ?>' class='h-100'>
-    <head>
-        <meta charset='<?= Yii::$app->charset ?>'>
-        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
-        <?php $this->registerCsrfMetaTags() ?>
-        <?= "<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css'>" ?>
-        <title><?= Html::encode($this->title) ?></title>
-        <?php $this->head() ?>
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang='<?= Yii::$app->language ?>' class='h-100'>
+
+<head>
+    <meta charset='<?= Yii::$app->charset ?>'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <?php $this->registerCsrfMetaTags() ?>
+    <?= "<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css'>" ?>
+    <title><?= Html::encode($this->title) ?></title>
+    <?php $this->head() ?>
+</head>
+
+<body>
     <?php $this->beginBody() ?>
 
     <header class='header'>
@@ -64,11 +66,11 @@ $myAssetBundle = AppAsset::register($this);
                                 </li>
                                 <li class='nav-item'>
                                     <?= Html::beginForm(['/admin/auth/logout'], 'post', ['class' => 'd-flex'])
-                                    . Html::submitButton(
-                                        'Logout (' . Yii::$app->user->identity->username . ')',
-                                        ['class' => 'btn btn-link logout text-decoration-none']
-                                    )
-                                    . Html::endForm(); ?>
+                                        . Html::submitButton(
+                                            'Logout (' . Yii::$app->user->identity->username . ')',
+                                            ['class' => 'btn btn-link logout text-decoration-none']
+                                        )
+                                        . Html::endForm(); ?>
                                 </li>
                             <?php endif; ?>
                         </ul>
@@ -90,10 +92,11 @@ $myAssetBundle = AppAsset::register($this);
                         'itemTemplate' => "<li>{link}</li>\n",
                         'links' => $this->params['breadcrumbs'],
                         'homeLink' => [
-                            'label' => Yii::t('app','Головна'),
+                            'label' => Yii::t('app', 'Головна'),
                             'url' => ['/'],
                             'template' => "<i class='ace-icon fa fa-home home-icon'></i><li>{link}</li>",
                         ],
+                        'options' => ['class' => 'breadcrumb container'],
                     ]) ?>
                 <?php endif ?>
             </ul>
@@ -104,7 +107,7 @@ $myAssetBundle = AppAsset::register($this);
             <a href="" class="up-button">
                 <svg width='29' height='29' viewBox='0 0 50 29' fill='none'>
                     <path class='up-button__path' d='M4.5 24.5L25 4L45.5 24.5' stroke='#545683' stroke-width='4'
-                          stroke-linecap='round' stroke-linejoin='round'></path>
+                        stroke-linecap='round' stroke-linejoin='round'></path>
                 </svg>
             </a>
         </div>
@@ -114,7 +117,7 @@ $myAssetBundle = AppAsset::register($this);
             <div class='footer-logo'>
                 <a class='cw td' href='/'>
                     <?= Html::img($myAssetBundle->baseUrl . '/images/icon-round.webp') ?>
-                    <span>Бухгалтерська агенція "ЛЕВ"</span>
+                    <span class='cw'>Бухгалтерська агенція "ЛЕВ"</span>
                 </a>
                 <span>Наш супровід - Ваш спокій</span>
             </div>
@@ -134,15 +137,15 @@ $myAssetBundle = AppAsset::register($this);
                         <i class='fa-brands fa-telegram cw'></i>
                     </a>
                     <a rel='noopener noreferrer' target='_blank' href='viber://chat?number=+380986073304'
-                       class='social-icons-link'>
+                        class='social-icons-link'>
                         <i class='fa-brands fa-viber cw'></i>
                     </a>
                     <a rel='noopener noreferrer' target='_blank' href='https://www.instagram.com/lev_buh_agency'
-                       class='social-icons-link'>
+                        class='social-icons-link'>
                         <i class='fa-brands fa-instagram cw'></i>
                     </a>
                     <a rel='noopener noreferrer' target='_blank'
-                       href='https://www.facebook.com/profile.php?id=61555635522199' class='social-icons-link'>
+                        href='https://www.facebook.com/profile.php?id=61555635522199' class='social-icons-link'>
                         <i class='fa-brands fa-facebook cw'></i>
                     </a>
                 </div>
@@ -150,12 +153,17 @@ $myAssetBundle = AppAsset::register($this);
 
             <div class='footer-address'>
                 <h2 class='footer-title'>Адреса офісу</h2>
-                <i class='fa-solid fa-location-dot'></i>
-                <?= Html::a(Yii::t('app', 'Харківська обл., смт Пісочин (с.Надточії), вул.Дачна 39'), ['/contact']) ?>
+                <a
+                    class='cw td' href='/contact'>
+                    <i class='fa-solid fa-location-dot'></i>
+                    Харківська обл., смт Пісочин (с.Надточії), вул.Дачна 39
+                </a>
+
             </div>
         </div>
     </footer>
     <?php $this->endBody() ?>
-    </body>
-    </html>
+</body>
+
+</html>
 <?php $this->endPage();
